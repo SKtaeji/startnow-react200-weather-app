@@ -97,7 +97,7 @@ export default class SearchBar extends React.Component {
             <button
               type="button"
               className="btn btn-secondary"
-              value="Washington D.C."
+              value="Washington DC."
               onClick={this.handleCityTabs}
             >Washington D.C</button>
             <button
@@ -133,10 +133,10 @@ export default class SearchBar extends React.Component {
           </form>
           <div className="card error p-1">
             <p className="errorText">
-              An error occured while attempting to display your selected Cities
-              Weather
+              An error occured while attempting to display your selected city's
+              weather.
             </p>
-            <p>Please check spelling of your city and try again</p>
+            <p>Please check the spelling of your city and try again.</p>
           </div>
         </div>
       );
@@ -160,7 +160,7 @@ export default class SearchBar extends React.Component {
           <button
             type="button"
             className="btn btn-secondary"
-            value="Washington D.C."
+            value="Washington DC."
             onClick={this.handleCityTabs}
           >Washington D.C</button>
           <button

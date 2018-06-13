@@ -18,7 +18,7 @@ export default class SearchHistory extends React.Component {
             <tbody>
               {searchHistory.map(searchItem => {
                 return (
-                  <tr>
+                  <tr key={searchItem.id}>
                     <th scope="row">{searchItem.city}</th>
                     <td>
                       {searchItem.date}
