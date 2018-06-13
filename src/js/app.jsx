@@ -4,6 +4,10 @@ import SearchBar from './components/searchBar';
 import SearchHistory from './components/searchHistory';
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className='container-fluid'>
@@ -12,9 +16,7 @@ export default class App extends React.Component {
           <h5 className='lead text-center'>Always know if you'll need an umbrella?</h5>
         </div>
         <div className='form-group row'>
-          
-            <SearchBar />
-          
+          <SearchBar /> 
         </div>
         <div className='row'>
           <div className='col-12 col-md-6 mb-4'>
