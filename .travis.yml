@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - '9'
+dist: trusty
+env:
+  - NODE_ENV=development
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install
+script:
+  - npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: m59TorL1AwFmLrjQyhJVRyzN86Rqp2/wdE/WEV2/MYTHtaAHW0S+HkzMuSOoYbiqOUMJroEhyJpJcjusYFdMj1ecEn8AVN+QmoB9lzxX0iem8nik9T5gML3CwocXGnMSIyiKQjbW187SHXDkJxlyqfPXGeAvu8ZecBS9qfiST5XQ/kldbzQpYdvvl2ZximQzUPWUfafLJjEE07xieJESdzctbu3WJL6/eM9HAnPd5rFtWL5jjIuI4Es4MMMljbBnadi0/5eqHyqh7Hxw9wVVzG66rBb68esWb/XShfHh3i7gCL9BAUTPRlqyGf0OP+2KWiV6vkQoU1PgOu7sBvY/nh8tImvm5m/5Kg+l0u5YnAuAtB/z1JtjOUs7lVyEeR+RI70OK3f2KlqIRd4J7jxF6GnppBJ3BT5qbTVwVy9NBmWuHVDDVckvS6xaKGi2Yqi9tmLjvGXZsFNmX/nI8LUqz6bg15vDt+0xXhwDijIImDF12+d6MQvEm2XrTuzew20ZHnf9dS4SswXr61SIL0knLfzn62bw6eG82+iD93xL5rongXQOD6988INu8Iswl8fa4noY2jJWaFBGHX5EG/6XBGpiVLNTxrN3XC7CUkuMKjGhuHgOsZkfXMProoBSaUm2+gMU9gF2bm+SzehiqvcAoes88OwBS37QH7nhYMMlgxA=
+  app: sk-react200-weather-app
+  on:
+    repo: SKtaeji/startnow-react200-weather-app
